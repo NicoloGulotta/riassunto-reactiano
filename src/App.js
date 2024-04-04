@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { } from 'react-icons/fa';
+import ComponenteTest from "./components/ComponenteTest";
+import { Button } from "react-bootstrap";
 
 function App() {
+  const alerta = () => {
+    alert('ma che cazzio faccio')
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button onClick={alerta}> toccami</Button>
+      <ComponenteTest name='' />
     </div>
   );
 }
